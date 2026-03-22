@@ -1,10 +1,8 @@
-
-
 class Solution:
-    def containsDuplicate(self, nums):
-        seen = set()
+    def containsDuplicate(self, nums) :
+        top = set()
         for n in nums:
-            if n in seen:
+            if n in top:
                 return True
-            seen.add(n)
+            top.add(n)
         return False
